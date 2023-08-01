@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        body{
+            background-color: black;
+            color: beige;
+        }
+    </style>
+  </head>
+  <body>
+    <h1><center>Making Interactive Elements Using javascript</center></h1>
+    <div id="box">
+      <ul>
+        <li>Stay Foolish,Stay Hungry</li>
+        <li>Man Searchs For A Meaning</li>
+        <li>Atomic Habits</li>
+        <li>Rich dad,Poor dad</li>
+      </ul>
+    </div>
+    <script>
+      const box = document.getElementById('box');
+box.addEventListener('mouseover', function handleMouseOver() {
+  box.style.color = 'red';
+});
+box.addEventListener('mouseout', function handleMouseOut() {
+  box.style.color = 'beige';
+});
+    </script>
+  </body>
+</html>
